@@ -1,5 +1,7 @@
 import sumador from "./sumador"
 import generarFizzBuzz from "./fizzbuzz";
+
+
 describe("FizzBuzz",()=>{
     it("Generar el mismo numero si no sigue ninguna regla",()=>{
         
@@ -28,6 +30,9 @@ describe("FizzBuzz",()=>{
     });
     it("Generar Buzz para multiplos de 5",()=>{
         expect(generarFizzBuzz(1)+" "+generarFizzBuzz(2)+" "+generarFizzBuzz(3)+" "+generarFizzBuzz(4)).toEqual("1 2 Fizz 4");
+    });
+    it("Generar FizzBuzz si el numero es multiplo de 3 y 5 a la vez",()=>{
+        expect(generarFizzBuzz(30)).toEqual("FizzBuzz");
     });
     
 })
