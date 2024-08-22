@@ -16,7 +16,20 @@ function generarFizzBuzz(numero)
 }
 function generarSecuenciaFizzBuzz(limite)
 {
-    return "1 2 Fizz 4";
+    let salida="";
+    for(let i=1;i<=limite;i++)
+    {
+        if(i===limite)
+        {
+            salida=salida+generarFizzBuzz(i);
+        }
+        else
+        {
+            salida=salida+generarFizzBuzz(i)+" ";
+        }
+    }
+
+    return salida;
 }
 
 export {generarFizzBuzz,generarSecuenciaFizzBuzz};

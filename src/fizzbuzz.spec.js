@@ -30,6 +30,9 @@ describe("FizzBuzz",()=>{
     it("Genera fizz y buzz en una secuencia segun el numero",()=>{
         expect(generarSecuenciaFizzBuzz(4)).toEqual("1 2 Fizz 4");
     });
+    it("Genera fizz y buzz en una secuencia segun el numero",()=>{
+        expect(generarSecuenciaFizzBuzz(10)).toEqual("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz");
+    });
     it("Generar FizzBuzz si el numero es multiplo de 3 y 5 a la vez",()=>{
         expect(generarFizzBuzz(30)).toEqual("FizzBuzz");
     });
