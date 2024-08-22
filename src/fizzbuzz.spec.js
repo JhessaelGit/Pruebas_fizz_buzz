@@ -1,5 +1,4 @@
-import sumador from "./sumador"
-import generarFizzBuzz from "./fizzbuzz";
+import {generarFizzBuzz,generarSecuenciaFizzBuzz} from "./fizzbuzz";
 
 
 describe("FizzBuzz",()=>{
@@ -28,8 +27,8 @@ describe("FizzBuzz",()=>{
     it("Generar Buzz para multiplos de 5",()=>{
         expect(generarFizzBuzz(20)).toEqual("Buzz");
     });
-    it("Generar Buzz para multiplos de 5",()=>{
-        expect(generarFizzBuzz(1)+" "+generarFizzBuzz(2)+" "+generarFizzBuzz(3)+" "+generarFizzBuzz(4)).toEqual("1 2 Fizz 4");
+    it("Genera fizz y buzz en una secuencia segun el numero",()=>{
+        expect(generarSecuenciaFizzBuzz(4)).toEqual("1 2 Fizz 4");
     });
     it("Generar FizzBuzz si el numero es multiplo de 3 y 5 a la vez",()=>{
         expect(generarFizzBuzz(30)).toEqual("FizzBuzz");

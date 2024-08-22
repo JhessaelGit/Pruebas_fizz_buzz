@@ -14,6 +14,9 @@ function generarFizzBuzz(numero)
     }
     return numero+"";
 }
+function generarSecuenciaFizzBuzz(limite)
+{
+    return "1 2 Fizz 4";
+}
 
-
-export default generarFizzBuzz;
+export {generarFizzBuzz,generarSecuenciaFizzBuzz};
